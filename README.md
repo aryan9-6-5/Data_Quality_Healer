@@ -1,6 +1,6 @@
-# 🚑 Automated Data Quality Healer (ML-Driven)
+#  Automated Data Quality Healer (ML-Driven)
 
-## 🔍 Problem Statement
+##  Problem Statement
 
 Modern ML and analytics systems fail not because of bad models, but because of **bad data**:
 - Missing values
@@ -11,14 +11,14 @@ Modern ML and analytics systems fail not because of bad models, but because of *
 Most systems only **detect** issues — they don't **fix** them.
 
 This project builds an intelligent ML-based system that:
-- ✅ Detects data quality issues automatically
-- ✅ Classifies the issue type
-- ✅ Suggests or applies corrective actions
-- ✅ Learns from past fixes
+-  Detects data quality issues automatically
+-  Classifies the issue type
+-  Suggests or applies corrective actions
+-  Learns from past fixes
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 1. **Detect** anomalies in incoming datasets
 2. **Identify** type of data issue
@@ -28,7 +28,7 @@ This project builds an intelligent ML-based system that:
 
 ---
 
-## 🧱 System Architecture
+##  System Architecture
 
 ```
 Incoming Data
@@ -48,14 +48,14 @@ Cleaned Data + Audit Logs
 
 ## 🧠 ML Components
 
-### 1️⃣ Data Profiler
+### 1️ Data Profiler
 Extracts statistical features:
 - Missing value %
 - Mean, std, skewness
 - Unique counts
 - Schema signature
 
-### 2️⃣ Anomaly Detector (Unsupervised)
+###  Anomaly Detector (Unsupervised)
 **Models**: Isolation Forest, One-Class SVM
 
 **Detects**:
@@ -64,7 +64,7 @@ Extracts statistical features:
 - Null floods
 - Distribution drift
 
-### 3️⃣ Issue Classifier (Supervised)
+###  Issue Classifier (Supervised)
 Classifies detected anomalies into:
 - Missing Data
 - Outliers
@@ -74,7 +74,7 @@ Classifies detected anomalies into:
 
 **Models**: Random Forest, Gradient Boosting
 
-### 4️⃣ Healing Recommendation Engine
+###  Healing Recommendation Engine
 Maps issues to fixes:
 
 | Issue Type | Suggested Fix |
@@ -85,14 +85,14 @@ Maps issues to fixes:
 | Schema Change | Version Rollback |
 | Duplicates | Deduplication |
 
-### 5️⃣ Feedback Loop
+###  Feedback Loop
 - User accepts/rejects fixes
 - System updates confidence scores
 - Learning from production
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 - **Anomaly Detection Precision**: How many detected anomalies are real?
 - **False Positive Rate**: How often do we flag good data?
@@ -113,7 +113,7 @@ Maps issues to fixes:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 data-healer/
@@ -151,7 +151,7 @@ data-healer/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 
@@ -225,15 +225,15 @@ cleaned_data = healer.heal(data, issue_type='missing_values')
 > *"Instead of building another prediction model, I focused on **data reliability**, which is a real bottleneck in production ML systems. My system not only detects data issues but also recommends corrective actions and **learns from past fixes**."*
 
 Key talking points:
-- ✅ **Enterprise mindset**: Solves real production problems
-- ✅ **ML beyond classification**: Unsupervised + supervised learning
-- ✅ **Data engineering + ML**: End-to-end pipeline
-- ✅ **Not copied from Kaggle**: Original architecture
-- ✅ **Easy to extend**: Modular design
+-  **Enterprise mindset**: Solves real production problems
+-  **ML beyond classification**: Unsupervised + supervised learning
+-  **Data engineering + ML**: End-to-end pipeline
+-  **Not copied from Kaggle**: Original architecture
+-  **Easy to extend**: Modular design
 
 ---
 
-## 🎓 Learning Outcomes
+##  Learning Outcomes
 
 1. **Unsupervised Learning**: Isolation Forest, One-Class SVM
 2. **Supervised Classification**: Random Forest, Gradient Boosting
@@ -243,7 +243,7 @@ Key talking points:
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] Real-time streaming data support
 - [ ] Deep learning for complex drift detection
@@ -253,17 +253,6 @@ Key talking points:
 
 ---
 
-## 📄 License
-
-MIT License
-
----
-
-## 👨‍💻 Author
-
-Built for CodSoft ML Internship
-
----
 
 ## 🙏 Acknowledgments
 
