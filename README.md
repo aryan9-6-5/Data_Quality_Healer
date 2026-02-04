@@ -46,7 +46,7 @@ Cleaned Data + Audit Logs
 
 ---
 
-## 🧠 ML Components
+##  ML Components
 
 ### 1️ Data Profiler
 Extracts statistical features:
@@ -102,7 +102,7 @@ Maps issues to fixes:
 
 ---
 
-## 🖥️ Tech Stack
+##  Tech Stack
 
 - **Python 3.9+**
 - **Pandas** / **NumPy**: Data manipulation
@@ -182,7 +182,7 @@ streamlit run dashboard/app.py
 
 ---
 
-## 🧪 Usage Examples
+##  Usage Examples
 
 ### Example 1: Detect Anomalies
 
@@ -220,7 +220,7 @@ cleaned_data = healer.heal(data, issue_type='missing_values')
 
 ---
 
-## 📈 How to Explain in Interviews
+##  How to Explain in Interviews
 
 > *"Instead of building another prediction model, I focused on **data reliability**, which is a real bottleneck in production ML systems. My system not only detects data issues but also recommends corrective actions and **learns from past fixes**."*
 
@@ -254,6 +254,6 @@ Key talking points:
 ---
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 This project addresses real production ML challenges and demonstrates enterprise-level thinking beyond typical Kaggle competitions.
