@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+ve/
+venv/
+ENV/
+env/
+
+# Data files
+data/samples/*.csv
+*.csv
+
+# Models
+models/*.pkl
+models/*.joblib
+
+# Logs
+logs/*.log
+logs/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/

@@ -1,0 +1,62 @@
+# Data Quality Healer Configuration
+
+# Anomaly Detection Settings
+anomaly_detection:
+  contamination: 0.1  # Expected proportion of outliers
+  n_estimators: 100   # For Isolation Forest
+  max_samples: 256
+  random_state: 42
+  
+# Issue Classification Settings
+classification:
+  test_size: 0.2
+  n_estimators: 100
+  max_depth: 10
+  random_state: 42
+  
+# Data Profiling Settings
+profiling:
+  numeric_features:
+    - mean
+    - median
+    - std
+    - skewness
+    - kurtosis
+    - min
+    - max
+    - missing_rate
+    - unique_count
+  categorical_features:
+    - unique_count
+    - mode
+    - missing_rate
+    - cardinality_ratio
+    
+# Healing Engine Settings
+healing:
+  missing_values:
+    strategy: 'smart'  # Options: mean, median, mode, knn, smart
+    knn_neighbors: 5
+  outliers:
+    method: 'iqr'  # Options: iqr, zscore, winsorize
+    threshold: 3.0
+  duplicates:
+    keep: 'first'  # Options: first, last, False
+    
+# Thresholds
+thresholds:
+  missing_rate_alert: 0.3  # Alert if >30% missing
+  drift_threshold: 0.05     # P-value for KS test
+  anomaly_score: -0.5       # Isolation Forest threshold
+  
+# Logging
+logging:
+  level: 'INFO'
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  file: 'logs/data_healer.log'
+  
+# Dashboard
+dashboard:
+  title: 'Data Quality Healer Dashboard'
+  theme: 'light'
+  refresh_interval: 60  # seconds
